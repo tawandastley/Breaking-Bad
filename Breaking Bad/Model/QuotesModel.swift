@@ -7,15 +7,14 @@
 
 import Foundation
 
-struct QuotesModel: Decodable{
+struct QuotesModel: Decodable {
+    
     var quote  : String? = nil
     var author : String? = nil
     
     enum CodingKeys: String, CodingKey {
-        
         case quote  = "quote"
         case author = "author"
-        
     }
     
     init(from decoder: Decoder) throws {
@@ -24,7 +23,5 @@ struct QuotesModel: Decodable{
         author = try values.decodeIfPresent(String.self , forKey: .author )
     }
     
-    init() {
-        
-    }
+    init() { }
 }

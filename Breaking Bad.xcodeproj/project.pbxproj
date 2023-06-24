@@ -53,6 +53,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D63803B2A46E71F00959989 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DA711952A431F2F00FCBB1E /* Main.storyboard */,
+				9DA7119A2A431F3200FCBB1E /* LaunchScreen.storyboard */,
+				9DA711932A431F2F00FCBB1E /* ViewController.swift */,
+				9DD08C292A4369CF0092E16A /* LandingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D63803C2A46E77400959989 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DA711AE2A432E3A00FCBB1E /* QuotesViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		9DA711832A431F2F00FCBB1E = {
 			isa = PBXGroup;
 			children = (
@@ -75,16 +94,13 @@
 				9DD08C272A43698D0092E16A /* breaking bad.json */,
 				9DA7118F2A431F2F00FCBB1E /* AppDelegate.swift */,
 				9DA711912A431F2F00FCBB1E /* SceneDelegate.swift */,
-				9DA711932A431F2F00FCBB1E /* ViewController.swift */,
-				9DD08C292A4369CF0092E16A /* LandingViewController.swift */,
-				9DA711952A431F2F00FCBB1E /* Main.storyboard */,
+				9D63803B2A46E71F00959989 /* View */,
 				9DA711982A431F3200FCBB1E /* Assets.xcassets */,
-				9DA7119A2A431F3200FCBB1E /* LaunchScreen.storyboard */,
 				9DA7119D2A431F3200FCBB1E /* Info.plist */,
 				9DA711A92A43271500FCBB1E /* Cells */,
 				9DA711AA2A43272400FCBB1E /* Model */,
 				9DA711AD2A4327E500FCBB1E /* Service */,
-				9DA711AE2A432E3A00FCBB1E /* QuotesViewModel.swift */,
+				9D63803C2A46E77400959989 /* View Model */,
 			);
 			path = "Breaking Bad";
 			sourceTree = "<group>";

@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-
+    
     @IBOutlet weak var tableView: UITableView!
     var breakingBadQoutes = [QuotesModel]()
     let service = Service()
@@ -18,39 +18,21 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         super.viewDidLoad()
         let nib = UINib(nibName: "QuoteCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cell")
+        setupViews()
+        view.backgroundColor = .lightGray
+        
+    }
+    
+    private func setupViews() {
         service.fetchQuotes { quotes in
             self.breakingBadQoutes = quotes
-   
             DispatchQueue.main.async {
-                
                 self.tableView.reloadData()
             }
         }
         
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segue" {
-            service.fetchQuotes { quotes in
-                self.breakingBadQoutes = quotes
-           
-                DispatchQueue.main.async {
-                    
-                    self.tableView.reloadData()
-                }
-            }
-        }
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        service.fetchQuotes { quotes in
-            self.breakingBadQoutes = quotes
-            print(quotes)
-            DispatchQueue.main.async {
-                
-                self.tableView.reloadData()
-            }
-        }
-    }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return breakingBadQoutes.count
     }
@@ -66,14 +48,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
     
     @IBAction func refreshTapped(_ sender: UIButton) {
-        service.fetchQuotes { quotes in
-            self.breakingBadQoutes = quotes
-            print(quotes)
-            DispatchQueue.main.async {
-                
-                self.tableView.reloadData()
-            }
-        }
+        setupViews()
     }
 }
 

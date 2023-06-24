@@ -33,9 +33,4 @@ struct Service {
         }
         task.resume()
     }
-    
-    func parseData(quotes: Data){
-        
-        
-    }
 }

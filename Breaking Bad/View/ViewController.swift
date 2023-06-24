@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-    
     @IBOutlet weak var tableView: UITableView!
     var breakingBadQoutes = [QuotesModel]()
     let service = Service()
@@ -19,7 +18,6 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         let nib = UINib(nibName: "QuoteCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cell")
         setupViews()
-        view.backgroundColor = .lightGray
         
     }
     

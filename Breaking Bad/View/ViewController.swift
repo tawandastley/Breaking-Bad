@@ -21,6 +21,10 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! DetailViewController
+        
+    }
     private func setupViews() {
         service.fetchQuotes { quotes in
             self.breakingBadQoutes = quotes
@@ -45,8 +49,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         return cell
     }
     
-    @IBAction func refreshTapped(_ sender: UIButton) {
-        setupViews()
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailScreenSegue", sender: self)
     }
 }
 

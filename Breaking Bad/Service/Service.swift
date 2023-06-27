@@ -28,7 +28,7 @@ struct Service {
             }
         }
             else if error != nil{
-                print(error)
+                
             }
         }
         task.resume()

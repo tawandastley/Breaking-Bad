@@ -7,9 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    let refreshControl = UIRefreshControl()
     var breakingBadQoutes = [QuotesModel]()
     let service = Service()
     
@@ -17,23 +18,38 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         super.viewDidLoad()
         let nib = UINib(nibName: "QuoteCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cell")
-        setupViews()
-        
+        fetchQuotes()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl) // not required when using UITableViewController
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        fetchQuotes()
+        refreshControl.endRefreshing()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! DetailViewController
-        
+        let selectedRow = tableView.indexPathForSelectedRow?.row
+        let quote = breakingBadQoutes[selectedRow ?? 0].quote
+        let author = breakingBadQoutes[selectedRow ?? 0].author
+        destinationVC.quote = quote
+        destinationVC.author = author
+        destinationVC.image = UIImage(named: author ?? "Walter White")
     }
-    private func setupViews() {
+    
+    private func fetchQuotes() {
         service.fetchQuotes { quotes in
             self.breakingBadQoutes = quotes
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
-        
     }
+}
+    
+extension ViewController: UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return breakingBadQoutes.count

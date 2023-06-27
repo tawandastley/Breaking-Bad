@@ -13,10 +13,15 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     
+    var image: UIImage!
+    var quote: String!
+    var author: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageView.image = image
+        quoteLabel.text = quote
+        authorLabel.text = author
     }
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {

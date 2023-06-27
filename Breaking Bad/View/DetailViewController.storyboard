@@ -19,15 +19,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eZF-tT-5DI">
                                 <rect key="frame" x="16" y="140" width="361" height="203"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1W-5P-ePi">
-                                <rect key="frame" x="16" y="374" width="361" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1W-5P-ePi">
+                                <rect key="frame" x="16" y="374" width="361" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaG-1p-bIx">
-                                <rect key="frame" x="16" y="529" width="361" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="16" y="412" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,7 +41,7 @@
                             <constraint firstItem="eZF-tT-5DI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="81" id="FVY-Gp-UkJ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="eZF-tT-5DI" secondAttribute="bottom" constant="475" id="QnC-gr-ldu"/>
                             <constraint firstItem="eZF-tT-5DI" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="R7G-SY-Wjz"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="QaG-1p-bIx" secondAttribute="bottom" constant="268" id="X3z-Gu-Orm"/>
+                            <constraint firstItem="QaG-1p-bIx" firstAttribute="top" secondItem="t1W-5P-ePi" secondAttribute="bottom" constant="20" id="Tz0-gM-6yh"/>
                             <constraint firstItem="t1W-5P-ePi" firstAttribute="trailing" secondItem="eZF-tT-5DI" secondAttribute="trailing" id="sGF-wH-Orw"/>
                             <constraint firstItem="QaG-1p-bIx" firstAttribute="trailing" secondItem="t1W-5P-ePi" secondAttribute="trailing" id="vgc-l6-V0x"/>
                             <constraint firstItem="eZF-tT-5DI" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailingMargin" id="xPu-Gm-Cge"/>

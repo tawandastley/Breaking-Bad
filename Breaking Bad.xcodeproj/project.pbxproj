@@ -19,7 +19,6 @@
 		9DA711AC2A4327DD00FCBB1E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA711AB2A4327DD00FCBB1E /* Service.swift */; };
 		9DA711AF2A432E3A00FCBB1E /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA711AE2A432E3A00FCBB1E /* QuotesViewModel.swift */; };
 		9DD08C282A43698D0092E16A /* breaking bad.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DD08C272A43698D0092E16A /* breaking bad.json */; };
-		9DD08C2A2A4369CF0092E16A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD08C292A4369CF0092E16A /* LandingViewController.swift */; };
 		9DD08C2D2A436A980092E16A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD08C2C2A436A980092E16A /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +37,6 @@
 		9DA711AB2A4327DD00FCBB1E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		9DA711AE2A432E3A00FCBB1E /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
 		9DD08C272A43698D0092E16A /* breaking bad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "breaking bad.json"; sourceTree = "<group>"; };
-		9DD08C292A4369CF0092E16A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +57,6 @@
 				9DA711952A431F2F00FCBB1E /* Main.storyboard */,
 				9DA7119A2A431F3200FCBB1E /* LaunchScreen.storyboard */,
 				9DA711932A431F2F00FCBB1E /* ViewController.swift */,
-				9DD08C292A4369CF0092E16A /* LandingViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,7 +208,6 @@
 			files = (
 				9DA711A52A431F5200FCBB1E /* QuoteCell.swift in Sources */,
 				9DA711942A431F2F00FCBB1E /* ViewController.swift in Sources */,
-				9DD08C2A2A4369CF0092E16A /* LandingViewController.swift in Sources */,
 				9DA711A82A43268C00FCBB1E /* QuotesModel.swift in Sources */,
 				9DA711902A431F2F00FCBB1E /* AppDelegate.swift in Sources */,
 				9DA711922A431F2F00FCBB1E /* SceneDelegate.swift in Sources */,

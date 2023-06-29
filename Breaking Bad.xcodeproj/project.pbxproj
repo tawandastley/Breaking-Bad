@@ -10,6 +10,8 @@
 		9D149ECC2A4AC2A500BD8C6D /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D149ECB2A4AC2A500BD8C6D /* DetailViewController.storyboard */; };
 		9D149ECE2A4AC2BA00BD8C6D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D149ECD2A4AC2BA00BD8C6D /* DetailViewController.swift */; };
 		9D149ED22A4AD87300BD8C6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D149ED12A4AD87200BD8C6D /* Main.storyboard */; };
+		9D2778A62A4ADAC100E1B566 /* FavouriteQuotesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2778A52A4ADAC100E1B566 /* FavouriteQuotesViewController.storyboard */; };
+		9D2778A82A4ADAD800E1B566 /* FavouriteQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2778A72A4ADAD800E1B566 /* FavouriteQuotesViewController.swift */; };
 		9DA711902A431F2F00FCBB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7118F2A431F2F00FCBB1E /* AppDelegate.swift */; };
 		9DA711922A431F2F00FCBB1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA711912A431F2F00FCBB1E /* SceneDelegate.swift */; };
 		9DA711942A431F2F00FCBB1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA711932A431F2F00FCBB1E /* ViewController.swift */; };
@@ -20,6 +22,7 @@
 		9DA711A82A43268C00FCBB1E /* QuotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA711A72A43268C00FCBB1E /* QuotesModel.swift */; };
 		9DA711AC2A4327DD00FCBB1E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA711AB2A4327DD00FCBB1E /* Service.swift */; };
 		9DA711AF2A432E3A00FCBB1E /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA711AE2A432E3A00FCBB1E /* QuotesViewModel.swift */; };
+		9DAB1FF02A4AEFF600AA1F0D /* FavouriteQuotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB1FEE2A4AEFF600AA1F0D /* FavouriteQuotesModel.xcdatamodeld */; };
 		9DD08C282A43698D0092E16A /* breaking bad.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DD08C272A43698D0092E16A /* breaking bad.json */; };
 		9DD08C2D2A436A980092E16A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD08C2C2A436A980092E16A /* Lottie */; };
 /* End PBXBuildFile section */
@@ -28,6 +31,8 @@
 		9D149ECB2A4AC2A500BD8C6D /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		9D149ECD2A4AC2BA00BD8C6D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9D149ED12A4AD87200BD8C6D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9D2778A52A4ADAC100E1B566 /* FavouriteQuotesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavouriteQuotesViewController.storyboard; sourceTree = "<group>"; };
+		9D2778A72A4ADAD800E1B566 /* FavouriteQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteQuotesViewController.swift; sourceTree = "<group>"; };
 		9DA7118C2A431F2F00FCBB1E /* Breaking Bad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breaking Bad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA7118F2A431F2F00FCBB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA711912A431F2F00FCBB1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +45,8 @@
 		9DA711A72A43268C00FCBB1E /* QuotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesModel.swift; sourceTree = "<group>"; };
 		9DA711AB2A4327DD00FCBB1E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		9DA711AE2A432E3A00FCBB1E /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		9DAB1FEF2A4AEFF600AA1F0D /* FavouriteQuotesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavouriteQuotesModel.xcdatamodel; sourceTree = "<group>"; };
+		9DAB1FF12A4D6BD700AA1F0D /* Breaking Bad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Breaking Bad.entitlements"; sourceTree = "<group>"; };
 		9DD08C272A43698D0092E16A /* breaking bad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "breaking bad.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,11 +71,13 @@
 			path = "Detail ViewController";
 			sourceTree = "<group>";
 		};
-		9D149ED02A4AD73C00BD8C6D /* Landing */ = {
+		9D149ED02A4AD73C00BD8C6D /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
+				9D2778A52A4ADAC100E1B566 /* FavouriteQuotesViewController.storyboard */,
+				9D2778A72A4ADAD800E1B566 /* FavouriteQuotesViewController.swift */,
 			);
-			path = Landing;
+			path = Favourites;
 			sourceTree = "<group>";
 		};
 		9D63803B2A46E71F00959989 /* View */ = {
@@ -76,7 +85,7 @@
 			children = (
 				9D149ED12A4AD87200BD8C6D /* Main.storyboard */,
 				9DA711932A431F2F00FCBB1E /* ViewController.swift */,
-				9D149ED02A4AD73C00BD8C6D /* Landing */,
+				9D149ED02A4AD73C00BD8C6D /* Favourites */,
 				9DA7119A2A431F3200FCBB1E /* LaunchScreen.storyboard */,
 				9D149ECF2A4AD71600BD8C6D /* Detail ViewController */,
 			);
@@ -110,6 +119,7 @@
 		9DA7118E2A431F2F00FCBB1E /* Breaking Bad */ = {
 			isa = PBXGroup;
 			children = (
+				9DAB1FF12A4D6BD700AA1F0D /* Breaking Bad.entitlements */,
 				9DD08C272A43698D0092E16A /* breaking bad.json */,
 				9DA7118F2A431F2F00FCBB1E /* AppDelegate.swift */,
 				9DA711912A431F2F00FCBB1E /* SceneDelegate.swift */,
@@ -136,6 +146,7 @@
 		9DA711AA2A43272400FCBB1E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9DAB1FEE2A4AEFF600AA1F0D /* FavouriteQuotesModel.xcdatamodeld */,
 				9DA711A72A43268C00FCBB1E /* QuotesModel.swift */,
 			);
 			path = Model;
@@ -213,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2778A62A4ADAC100E1B566 /* FavouriteQuotesViewController.storyboard in Resources */,
 				9DA711A62A431F5200FCBB1E /* QuoteCell.xib in Resources */,
 				9DA7119C2A431F3200FCBB1E /* LaunchScreen.storyboard in Resources */,
 				9DA711992A431F3200FCBB1E /* Assets.xcassets in Resources */,
@@ -231,7 +243,9 @@
 			files = (
 				9DA711A52A431F5200FCBB1E /* QuoteCell.swift in Sources */,
 				9DA711942A431F2F00FCBB1E /* ViewController.swift in Sources */,
+				9DAB1FF02A4AEFF600AA1F0D /* FavouriteQuotesModel.xcdatamodeld in Sources */,
 				9DA711A82A43268C00FCBB1E /* QuotesModel.swift in Sources */,
+				9D2778A82A4ADAD800E1B566 /* FavouriteQuotesViewController.swift in Sources */,
 				9DA711902A431F2F00FCBB1E /* AppDelegate.swift in Sources */,
 				9DA711922A431F2F00FCBB1E /* SceneDelegate.swift in Sources */,
 				9DA711AC2A4327DD00FCBB1E /* Service.swift in Sources */,
@@ -304,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -358,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -373,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Breaking Bad/Breaking Bad.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MK2D93834;
@@ -401,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Breaking Bad/Breaking Bad.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MK2D93834;
@@ -465,6 +481,19 @@
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9DAB1FEE2A4AEFF600AA1F0D /* FavouriteQuotesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9DAB1FEF2A4AEFF600AA1F0D /* FavouriteQuotesModel.xcdatamodel */,
+			);
+			currentVersion = 9DAB1FEF2A4AEFF600AA1F0D /* FavouriteQuotesModel.xcdatamodel */;
+			path = FavouriteQuotesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9DA711842A431F2F00FCBB1E /* Project object */;
 }

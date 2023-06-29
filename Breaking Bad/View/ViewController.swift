@@ -19,14 +19,18 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "QuoteCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cell")
         fetchQuotes()
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
-        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
-        tableView.addSubview(refreshControl) // not required when using UITableViewController
+        setupRefreshControl()
     }
     
     @objc func refresh(_ sender: AnyObject) {
         fetchQuotes()
         refreshControl.endRefreshing()
+    }
+    
+    func setupRefreshControl() {
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl) // not required when using UITableViewController
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
